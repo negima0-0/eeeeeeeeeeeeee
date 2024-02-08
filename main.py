@@ -40,7 +40,7 @@ settei_sum = []
 #各ブックからセルの値をリストに格納
 for i in glob.glob(input_wb):
     ws2 = px.load_workbook(i).worksheets[0]
-    #受付のセルを集計
+    #受付のセルを集計 以下forは適当でbreakで調節する あとで書き直す
     for uketuke in range(2, 100, 1):
         cell_value = ws2.cell(row=uketuke, column=2).value
         if not cell_value == None : uketuke_sum.append(cell_value)
