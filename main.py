@@ -79,10 +79,10 @@ result4 = sum(settei_sum)
 #print(result4) #debug
 
 #集計excelへ書き込み
-sheet.cell(row=1, column=1).value = result
-sheet.cell(row=2, column=1).value = result2
-sheet.cell(row=3, column=1).value = result3
-sheet.cell(row=4, column=1).value = result4
+sheet.cell(row=1, column=2).value = result
+sheet.cell(row=2, column=2).value = result2
+sheet.cell(row=3, column=2).value = result3
+sheet.cell(row=4, column=2).value = result4
 
 '''
 #グラフ作成
